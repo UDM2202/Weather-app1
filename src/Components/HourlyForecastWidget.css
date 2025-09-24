@@ -1,0 +1,31 @@
+.hourly-widget {
+  display: flex;
+  flex-direction: column;
+   border: 1px solid  #343437;
+  border-radius: 10px;
+  margin: .25em;
+  padding: 1em;
+  align-items: center;
+  cursor: pointer;
+  min-width: 115px;
+  position: relative;
+}
+
+.day {
+  top: -1.5em;
+  position: absolute;
+ 
+}
+
+.temp {
+  font-size: 2em;
+}
+
+.precipitation {
+  font-size: 1.5em;
+}
+
+.wind {
+  font-size: 1.25em;
+  display: flex;
+}

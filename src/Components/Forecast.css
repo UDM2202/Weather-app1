@@ -1,0 +1,12 @@
+.forecast-widget {
+  display: flex;
+ overflow: hidden;
+  margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+
+.forecast {
+  margin-top: 3rem;}
+

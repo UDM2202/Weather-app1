@@ -1,0 +1,58 @@
+.App-light{
+  background-color:#f0f2f5 ;
+
+  .Header {
+background-color:#ffffff; 
+  }
+
+  .place {
+    color: #050505;
+  }
+
+  .search-container {
+      border:1px solid  #ced0d4;
+  }
+
+  .search-input input::placeholder{
+    color:#050505;
+  }
+
+  .search-icon {
+    color:#050505;
+  }
+
+  .Settings i {
+    color: #050505;
+  }
+.main {
+ color: #050505;
+}
+
+.settings-menu {
+  background-color:#ffffff;
+  color:#050505;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.settings-menu .measurement-systems .systems .system.active {
+  background-color: #050505 ;
+  color:white;
+}
+
+.search-results {
+  background-color:#ffffff;
+  color:#050505 ;
+}
+
+.search-results .results-container .result:hover {
+  background-color:#f0f2f5;
+}
+.search-input input {
+  color:#050505;
+}
+}
+
+

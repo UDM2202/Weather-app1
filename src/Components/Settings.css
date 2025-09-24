@@ -1,0 +1,104 @@
+.Settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  margin: .5em;
+}
+
+.theme-toggler-btns{
+  cursor: pointer;
+   display: flex;
+      position: relative;
+      height: 25px;
+      width: 25px;
+      overflow: hidden;
+
+}
+  .light-theme,
+      .dark-theme {
+        position: absolute;
+        top: 25px;
+        transition: top 0.5s ease-in-out;
+
+        &.active {
+          top: 0;
+        }
+      }
+
+      .settings-btn {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.settings-menu {
+  position: absolute;
+  z-index: 2;
+  top: 3em;
+  right: 2rem;
+  border-radius: 0.5rem;
+  background-color:#252527;
+  width: 250px;
+  padding: 0.5rem;
+  font-size: 1rem;
+ 
+  
+  /* Replace @include no-text-select with actual properties */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  transform: scale(0.1);
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.settings-menu.open {
+  transform: scale(1);
+  visibility: visible;
+ pointer-events: auto;
+}
+
+.settings-menu .measurement-systems {
+  padding: 0.5rem;
+}
+
+.settings-menu .measurement-systems .systems {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.settings-menu .measurement-systems .systems .system {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 2rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* .settings-menu .measurement-systems .systems .system {
+  background-color: #18181B;
+  color: white;
+} */
+
+
+@media (max-width: 414px) {
+  .Settings {
+    margin-left: auto; /* Push to the right */
+  }
+.system.active {
+   background-color: white;
+  color:#18181B;  
+}
+  .settings-btn {
+    margin-left: 10px;
+  }
+}
