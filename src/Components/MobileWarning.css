@@ -1,0 +1,38 @@
+/* MobileWarning.css */
+.mobile-warning {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mobile-warning {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+  }
+  
+  .warning-content {
+    max-width: 400px;
+    padding: 40px;
+  }
+  
+  .warning-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .warning-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+}
