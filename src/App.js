@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import Header from './Components/Header'
 import Main from './Components/Main'
 import ThemeContext from './Components/Themecontext';
-import MobileWarning from './Components/Mobilewarning';
+import MobileWarning from './Components/MobileWarning';
 import "./App.css";
 
 
